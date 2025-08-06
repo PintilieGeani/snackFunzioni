@@ -73,7 +73,8 @@ function stampaOgniSecondo(stringa) {
 
 function creaContatoreAutomatico(timer) {
     let counter = 1
-    const interval  = setInterval(() => {
+
+    return () => {const interval  = setInterval(() => {
         console.log(counter++)
     }, timer)
 
@@ -81,6 +82,7 @@ function creaContatoreAutomatico(timer) {
         clearInterval(interval)
         console.log("Contatore fermo dopo 5 secondi")
     }, 5000)
+}
 }
 
 // creaContatoreAutomatico(1000)
@@ -176,4 +178,5 @@ throttlerLog()
 setTimeout(() => {
     throttlerLog()
 }, 2500)
-
+ 
+// Correzione: le funzioni funzionano ma bisognava ritornare come funzioni gli snack 6, 7. Semplicemente facciamo return () => {Scriviamo la funzione qua} poi la dichiariamo in una variabile in modo da poter usare il closure. Ho capito male la consegna ma dopo la correzione ho capito meglio la richiesta (vedi essercizio 6 corretto)
