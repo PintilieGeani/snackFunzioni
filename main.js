@@ -179,4 +179,4 @@ setTimeout(() => {
     throttlerLog()
 }, 2500)
  
-// Correzione: le funzioni funzionano ma bisognava ritornare come funzioni gli snack 6, 7. Semplicemente facciamo return () => {Scriviamo la funzione qua} poi la dichiariamo in una variabile in modo da poter usare il closure. Ho capito male la consegna ma dopo la correzione ho capito meglio la richiesta (vedi essercizio 6 corretto)
+// Correzione: le funzioni funzionano ma bisognava ritornare come funzioni gli snack 6, 7. Semplicemente facciamo return () => {Scriviamo la funzione qua} poi la dichiariamo in una variabile in modo da poter usare il closure. Ho capito male la consegna ma dopo la correzione ho capito meglio la richiesta (vedi essercizio 6 corretto) LEGGERE MEGLIO LE CONSEGNE!!!
